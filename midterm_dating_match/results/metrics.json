@@ -1,0 +1,239 @@
+{
+  "problem": "pre-date prediction of mutual interest after a Mixmosa event date",
+  "source_rows": 1888,
+  "positive_rate": 0.1371822033898305,
+  "split": {
+    "train": {
+      "rows": 1182,
+      "events": 18,
+      "positives": 145,
+      "positive_rate": 0.12267343485617598
+    },
+    "validation": {
+      "rows": 338,
+      "events": 6,
+      "positives": 53,
+      "positive_rate": 0.15680473372781065
+    },
+    "test": {
+      "rows": 368,
+      "events": 6,
+      "positives": 61,
+      "positive_rate": 0.16576086956521738
+    }
+  },
+  "selection_metric": "5-fold event-grouped out-of-fold average precision",
+  "candidates": [
+    {
+      "model": "random_forest",
+      "parameters": {
+        "max_depth": null,
+        "min_samples_leaf": 15
+      },
+      "roc_auc": 0.569639282385122,
+      "average_precision": 0.17978837611382958
+    },
+    {
+      "model": "random_forest",
+      "parameters": {
+        "max_depth": 8,
+        "min_samples_leaf": 15
+      },
+      "roc_auc": 0.5669764971958617,
+      "average_precision": 0.17788196522339014
+    },
+    {
+      "model": "random_forest",
+      "parameters": {
+        "max_depth": 4,
+        "min_samples_leaf": 15
+      },
+      "roc_auc": 0.5588525191399625,
+      "average_precision": 0.16955376842227637
+    },
+    {
+      "model": "logistic_regression",
+      "parameters": {
+        "C": 0.01
+      },
+      "roc_auc": 0.5753545286449976,
+      "average_precision": 0.1683771375032098
+    },
+    {
+      "model": "random_forest",
+      "parameters": {
+        "max_depth": null,
+        "min_samples_leaf": 5
+      },
+      "roc_auc": 0.5576682100887849,
+      "average_precision": 0.16134462683467357
+    },
+    {
+      "model": "logistic_regression",
+      "parameters": {
+        "C": 0.1
+      },
+      "roc_auc": 0.5713125964638824,
+      "average_precision": 0.1596989143753591
+    },
+    {
+      "model": "logistic_regression",
+      "parameters": {
+        "C": 1.0
+      },
+      "roc_auc": 0.5643251730619355,
+      "average_precision": 0.15534142482237256
+    },
+    {
+      "model": "random_forest",
+      "parameters": {
+        "max_depth": 8,
+        "min_samples_leaf": 5
+      },
+      "roc_auc": 0.5578515869741286,
+      "average_precision": 0.15290516035621043
+    },
+    {
+      "model": "logistic_regression",
+      "parameters": {
+        "C": 10.0
+      },
+      "roc_auc": 0.5621246504378122,
+      "average_precision": 0.15275486918657205
+    },
+    {
+      "model": "random_forest",
+      "parameters": {
+        "max_depth": 4,
+        "min_samples_leaf": 5
+      },
+      "roc_auc": 0.5460295083971332,
+      "average_precision": 0.14723330060408518
+    },
+    {
+      "model": "decision_tree",
+      "parameters": {
+        "max_depth": 6,
+        "min_samples_leaf": 25
+      },
+      "roc_auc": 0.5083780314491358,
+      "average_precision": 0.13867980205699337
+    },
+    {
+      "model": "decision_tree",
+      "parameters": {
+        "max_depth": 4,
+        "min_samples_leaf": 10
+      },
+      "roc_auc": 0.5164294228212534,
+      "average_precision": 0.13329302599838258
+    },
+    {
+      "model": "decision_tree",
+      "parameters": {
+        "max_depth": 6,
+        "min_samples_leaf": 10
+      },
+      "roc_auc": 0.5151152218096242,
+      "average_precision": 0.1293780507619392
+    },
+    {
+      "model": "decision_tree",
+      "parameters": {
+        "max_depth": 4,
+        "min_samples_leaf": 25
+      },
+      "roc_auc": 0.49472791454637144,
+      "average_precision": 0.12793953808766365
+    },
+    {
+      "model": "decision_tree",
+      "parameters": {
+        "max_depth": 2,
+        "min_samples_leaf": 25
+      },
+      "roc_auc": 0.5016446614404254,
+      "average_precision": 0.12780080523175671
+    },
+    {
+      "model": "decision_tree",
+      "parameters": {
+        "max_depth": 2,
+        "min_samples_leaf": 10
+      },
+      "roc_auc": 0.4982827518757927,
+      "average_precision": 0.12434533554252916
+    },
+    {
+      "model": "dummy",
+      "parameters": {},
+      "roc_auc": 0.4355678570882807,
+      "average_precision": 0.11445362050960241
+    }
+  ],
+  "selected_model": "random_forest",
+  "selected_parameters": {
+    "max_depth": null,
+    "min_samples_leaf": 15
+  },
+  "threshold": 0.1,
+  "validation": {
+    "roc_auc": 0.569639282385122,
+    "average_precision": 0.17978837611382958,
+    "precision": 0.1413953488372093,
+    "recall": 0.7676767676767676,
+    "tn": 399,
+    "fp": 923,
+    "fn": 46,
+    "tp": 152
+  },
+  "test": {
+    "roc_auc": 0.4902547124472687,
+    "average_precision": 0.1673927785070083,
+    "precision": 0.15178571428571427,
+    "recall": 0.5573770491803278,
+    "tn": 117,
+    "fp": 190,
+    "fn": 27,
+    "tp": 34
+  },
+  "feature_columns": [
+    "male_age",
+    "male_height_inches",
+    "male_avg_physical_attractiveness_rating",
+    "male_agreeableness",
+    "male_conscientiousness",
+    "male_extraversion",
+    "male_neuroticism",
+    "male_openness",
+    "male_behavioral_health_score",
+    "male_get_along_well_with_family_score",
+    "male_num_children_wanted_score",
+    "female_age",
+    "female_height_inches",
+    "female_avg_physical_attractiveness_rating",
+    "female_agreeableness",
+    "female_conscientiousness",
+    "female_extraversion",
+    "female_neuroticism",
+    "female_openness",
+    "female_behavioral_health_score",
+    "female_get_along_well_with_family_score",
+    "female_num_children_wanted_score",
+    "abs_diff_age",
+    "abs_diff_height_inches",
+    "abs_diff_agreeableness",
+    "abs_diff_conscientiousness",
+    "abs_diff_extraversion",
+    "abs_diff_neuroticism",
+    "abs_diff_openness",
+    "abs_diff_num_children_wanted_score"
+  ],
+  "preprocessing": "median imputation with missing indicators; standard scaling for logistic regression",
+  "excluded": [
+    "event and participant IDs",
+    "both post-date decisions",
+    "swiping and feedback",
+    "ethnicity, religion, politics, income, drug use, and sexual history"
+  ]
+}

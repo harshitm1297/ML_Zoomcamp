@@ -1,0 +1,20 @@
+{
+  "male": {
+    "age": 30,
+    "height_inches": 70,
+    "agreeableness": 37,
+    "conscientiousness": 38,
+    "extraversion": 36,
+    "neuroticism": 18,
+    "openness": 28
+  },
+  "female": {
+    "age": 29,
+    "height_inches": 65,
+    "agreeableness": 39,
+    "conscientiousness": 38,
+    "extraversion": 36,
+    "neuroticism": 20,
+    "openness": 28
+  }
+}

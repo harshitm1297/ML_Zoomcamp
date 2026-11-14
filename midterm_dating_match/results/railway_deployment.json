@@ -1,0 +1,13 @@
+{
+  "provider": "Railway",
+  "project": "midterm_dating_match",
+  "environment": "production",
+  "project_id": "2e7646a3-0c6f-434d-ba04-18167de08af4",
+  "service_id": "54791dcf-8cd1-4abc-8d08-d06fb8bdd5df",
+  "deployment_id": "fd47f9cc-c531-4bd9-bebc-53c65b07df0d",
+  "status": "SUCCESS",
+  "builder": "DOCKERFILE",
+  "dockerfile_path": "/Dockerfile",
+  "public_url": "https://midtermdatingmatch-production.up.railway.app",
+  "verification_file": "results/railway_smoke.json"
+}

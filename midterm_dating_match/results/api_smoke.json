@@ -1,0 +1,11 @@
+{
+  "health": {
+    "status": "ok"
+  },
+  "prediction": {
+    "mutual_interest_probability": 0.15831826177596287,
+    "mutual_interest_prediction": true,
+    "threshold": 0.1
+  },
+  "invalid_status": 422
+}

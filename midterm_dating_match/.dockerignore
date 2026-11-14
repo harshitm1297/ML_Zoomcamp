@@ -1,0 +1,10 @@
+.venv
+.railway-cli
+.railway
+__pycache__
+.ipynb_checkpoints
+data
+results
+notebook.ipynb
+*.pyc
+.git
